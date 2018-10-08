@@ -15,7 +15,7 @@ script:
   # headless chrome add.
   # - ng test
   # - ng e2e
-  - ng build -prod
+  - ng build --prod
 
 deploy:
   provider: pages
