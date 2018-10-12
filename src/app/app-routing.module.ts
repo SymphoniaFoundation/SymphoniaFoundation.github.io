@@ -4,7 +4,15 @@ import { LayoutComponent } from './ui/containers/layout/layout.component';
 
 const routes: Routes = [{
   path: '',
-  component: LayoutComponent
+  component: LayoutComponent,
+  children: [{
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/'
+  }, {
+    path: '',
+    loadChildren: './home/home.module#HomeModule'
+  }]
 }];
 
 @NgModule({
