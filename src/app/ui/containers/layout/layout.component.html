@@ -1,2 +1,25 @@
-<sym-header></sym-header>
-<router-outlet></router-outlet>
+<div
+  id="container"
+  gdAreas="header header header | lside content rside | footer footer footer"
+  gdColumns="auto auto auto"
+  gdColumns.xs="15px auto 15px"
+  gdColumns.sm="50px auto 50px"
+  gdColumns.md="70px auto 70px"
+  gdRows="50px auto 50px">
+
+  <div gdArea="header">
+    <sym-header></sym-header>
+  </div>
+
+  <div gdArea="content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div gdArea="footer">
+    <sym-footer></sym-footer>
+  </div>
+
+</div>
+
+
+
